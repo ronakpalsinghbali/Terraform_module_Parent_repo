@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 resource "aws_instance" "EC2_instance" {
 
   ami           = var.ami_windows
@@ -10,3 +11,16 @@ resource "aws_instance" "EC2_instance" {
 }
 
 
+=======
+resource "aws_instance" "EC2_instance" {
+
+  ami           = var.ami_windows
+  instance_type = var.instance_type_t2_micro
+
+  tags = var.tag_parent
+  
+  volume_tags = var.tag_parent
+}
+
+
+>>>>>>> d8631cac99067dce4b19d89cac83341818394a59
